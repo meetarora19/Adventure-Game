@@ -1,0 +1,68 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(240, 74%, 75%);
+}
+
+.container {
+    width: 1400px;
+    max-width: 80%;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 2px ;
+    color: hsl(240, 74%, 75%);
+    font-size: large;
+}
+
+.container:hover {
+    box-shadow: 0 0 15px 2px black;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: hsl(240, 74%, 75%);
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    outline: none;
+}
+
+.btn:hover {
+    box-shadow: 0 0 5px 1px white;
+}
+
+.start-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
